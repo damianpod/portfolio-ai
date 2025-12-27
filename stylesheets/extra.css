@@ -246,11 +246,31 @@ h1, h2, h3 {
 }
 
 /* IMAGE STYLES */
-.hero-image-box img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    filter: grayscale(100%);
+/* Precyzyjne sterowanie rozmiarem zdjęcia profilowego */
+.image-border {
+    width: 350px;       /* Stała szerokość kontenera */
+    height: 350px;      /* Stała wysokość kontenera */
+    border: 2px solid var(--neon-cyan);
+    padding: 10px;
+    position: relative;
+    overflow: hidden;   /* Wszystko co wystaje poza ramkę, zostanie ucięte */
+}
+
+.image-border img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;  /* Zachowuje proporcje twarzy, wypełniając kwadrat */
+    filter: grayscale(100%) contrast(1.1);
+    display: block;
+}
+
+/* Poprawka dla telefonów, żeby zdjęcie nie było za duże na małym ekranie */
+@media (max-width: 900px) {
+    .image-border {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto; /* Wyśrodkowanie zdjęcia na komórce */
+    }
 }
 
 .image-border {
