@@ -1,5 +1,5 @@
 site_name: AI & Data Architect
-site_url: https://damianpod.io/portfolio-ai
+site_url: https://damianpod.github.io/portfolio-ai/
 repo_url: https://github.com/damianpod/portfolio-ai.git
 
 theme:
@@ -36,5 +36,5 @@ plugins:
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
