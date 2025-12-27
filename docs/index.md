@@ -171,14 +171,24 @@ hide:
     </div>
 </div>
 
-        <div id="kontakt" class="footer-section">
-            <h2 class="section-title">KONTAKT <span class="neon-text">/</span></h2>
-            <div class="grid-cols-2">
-                <div class="glass-card cyan-border">
-                    <h3 class="neon-text">Let's connect</h3>
-                    <p>Email: poddamian@gmail.com</p>
-                    <p>Telefon: +48 727 929 260</p>
-                </div>
+       <div id="kontakt" class="footer-section">
+    <h2 class="section-title">KONTAKT <span class="neon-text">/</span></h2>
+    <div class="grid-cols-2">
+        <div class="glass-card cyan-border">
+            <h3 class="neon-text">Let's connect</h3>
+            <p>
+                <strong>Email:</strong> 
+                <a href="mailto:poddamian@gmail.com?subject=Zapytanie o współpracę" style="color: #fff; text-decoration: none; border-bottom: 1px solid var(--neon-cyan);">
+                    poddamian@gmail.com
+                </a>
+            </p>
+            <p>
+                <strong>Telefon:</strong> 
+                <a href="tel:+48727929260" style="color: #fff; text-decoration: none;">
+                    +48 727 929 260
+                </a>
+            </p>
+        </div>
                 <div class="glass-card white-border">
                     <h3 class="neon-text">Social Media</h3>
                     <div class="social-links">
