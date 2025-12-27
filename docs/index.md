@@ -115,6 +115,62 @@ hide:
     </div>
 </div>
 
+<div class="tech-stack-container" style="background: rgba(255,255,255,0.02); padding: 3.5rem; border-radius: 4px; margin: 6rem auto; border: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden;">
+    
+    <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(0, 243, 255, 0.03) 0%, transparent 70%); pointer-events: none;"></div>
+
+    <h2 style="text-align: left; font-size: 2.2rem; margin-bottom: 3rem; font-family: var(--font-futuristic);">
+        TECH <span class="neon-text">STACK</span>
+    </h2>
+    
+    <div style="display: flex; flex-wrap: wrap; gap: 3rem; position: relative; z-index: 1;">
+        <div style="flex: 1; min-width: 220px;">
+            <h4 class="neon-text" style="font-size: 0.9rem; letter-spacing: 0.2em; border-bottom: 1px solid #222; padding-bottom: 10px; margin-bottom: 1.5rem;">CORE & DATA</h4>
+            <div class="tag-container">
+                <span class="skill-tag highlight">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag highlight">Pandas</span>
+                <span class="skill-tag">Numpy</span>
+                <span class="skill-tag">Pandera</span>
+            </div>
+        </div>
+
+        <div style="flex: 1; min-width: 220px;">
+            <h4 class="neon-text" style="font-size: 0.9rem; letter-spacing: 0.2em; border-bottom: 1px solid #222; padding-bottom: 10px; margin-bottom: 1.5rem;">AI & ML</h4>
+            <div class="tag-container">
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">PyCaret</span>
+                <span class="skill-tag">MLflow</span>
+                <span class="skill-tag highlight">Langfuse</span>
+                <span class="skill-tag highlight">Qdrant</span>
+                <span class="skill-tag">LLM</span>
+            </div>
+        </div>
+
+        <div style="flex: 1; min-width: 220px;">
+            <h4 class="neon-text" style="font-size: 0.9rem; letter-spacing: 0.2em; border-bottom: 1px solid #222; padding-bottom: 10px; margin-bottom: 1.5rem;">VISUALIZATION & APPS</h4>
+            <div class="tag-container">
+                <span class="skill-tag highlight">Streamlit</span>
+                <span class="skill-tag">Plotly</span>
+                <span class="skill-tag">Seaborn</span>
+                <span class="skill-tag">Matplotlib</span>
+                <span class="skill-tag">YData-Profiling</span>
+            </div>
+        </div>
+
+        <div style="flex: 1; min-width: 220px;">
+            <h4 class="neon-text" style="font-size: 0.9rem; letter-spacing: 0.2em; border-bottom: 1px solid #222; padding-bottom: 10px; margin-bottom: 1.5rem;">TOOLS & OPS</h4>
+            <div class="tag-container">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag highlight">Digital Ocean</span>
+                <span class="skill-tag">Jira/Trello</span>
+                <span class="skill-tag">Obsidian</span>
+            </div>
+        </div>
+    </div>
+</div>
+
         <div id="kontakt" class="footer-section">
             <h2 class="section-title">KONTAKT <span class="neon-text">/</span></h2>
             <div class="grid-cols-2">

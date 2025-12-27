@@ -271,3 +271,27 @@ h1, h2, h3 {
 .tag-container { margin-top: 1rem; }
 .category-label { color: var(--neon-cyan); font-size: 0.8rem; }
 .copyright { text-align: center; margin-top: 4rem; color: #444; }
+
+.skill-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    margin: 0 6px 10px 0;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #94a3b8;
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.skill-tag.highlight {
+    border-color: rgba(0, 243, 255, 0.4);
+    color: var(--neon-cyan);
+}
+
+.skill-tag:hover {
+    border-color: var(--neon-cyan);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+    transform: translateY(-2px);
+}
