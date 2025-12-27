@@ -1,0 +1,155 @@
+:root {
+  --neon-cyan: #00f3ff;
+  --deep-black: #020617; /* Slate 950 */
+  --glass-bg: rgba(2, 6, 23, 0.7);
+  --glass-border: rgba(0, 243, 255, 0.2);
+  --font-futuristic: 'Space Grotesk', sans-serif;
+}
+
+/* --- Global Reset & Base --- */
+body {
+  background-color: var(--deep-black) !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 243, 255, 0.05) 0%, transparent 50%);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Ukrywamy standardowe elementy MkDocs na stronie głównej dla efektu Landing Page */
+.md-content__button { display: none; }
+.md-sidebar { display: none; } /* Opcjonalne: ukrywa nawigację boczną */
+
+/* --- Typography --- */
+h1, h2, h3 {
+  font-family: var(--font-futuristic);
+  letter-spacing: -0.02em;
+}
+
+.neon-text {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+/* --- Hero Section --- */
+.hero-container {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  margin-top: -50px; /* Kompensacja nagłówka */
+}
+
+#particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(180deg, #fff 0%, #aaa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-futuristic);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--deep-black);
+  background: var(--neon-cyan);
+  border: none;
+  border-radius: 2px; /* Ostry styl */
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.cta-button:hover {
+  background: #fff;
+  box-shadow: 0 0 40px rgba(0, 243, 255, 0.8);
+  transform: translateY(-2px);
+  color: var(--deep-black);
+}
+
+/* --- Grid System --- */
+.grid-cols-2, .grid-cols-3 {
+  display: grid;
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.grid-cols-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.grid-cols-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+/* --- Glass Cards (Tilt Effect Target) --- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  padding: 2rem;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.glass-card:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 10px 30px -10px rgba(0, 243, 255, 0.15);
+}
+
+.glass-card h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.glass-card p, .glass-card li {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+}
+
+/* --- Skills Tags --- */
+.skill-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 0 4px 8px 0;
+  border: 1px solid #333;
+  color: #ccc;
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+  background: rgba(0,0,0,0.5);
+}
+.skill-tag.highlight {
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+}
+
+/* --- Footer --- */
+.custom-footer {
+  border-top: 1px solid #333;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 4rem;
+}

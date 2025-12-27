@@ -1,0 +1,40 @@
+site_name: AI & Data Architect
+site_url: https://damianpod.io/portfolio-ai
+repo_url: https://github.com/damianpod/portfolio-ai.git
+
+theme:
+  name: material
+  #custom_dir: overrides
+  palette: 
+    scheme: slate # Wymuszenie trybu ciemnego
+    primary: black
+    accent: cyan
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant # Szybkie ładowanie SPA-like
+    - toc.integrate
+    - header.autohide
+
+# Importujemy fonty Google i nasze style
+extra_css:
+  - https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap
+  - stylesheets/extra.css
+
+# Importujemy skrypty animacji
+extra_javascript:
+  - javascripts/extra.js
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
